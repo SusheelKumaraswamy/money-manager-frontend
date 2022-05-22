@@ -44,9 +44,9 @@ export default function Betweendates(){
             <td>typeofexpense</td>
             </tr>
         </thead>
+        <tbody>
             {input.user.map((row)=>
                 (
-                    <>
                     <tr>
                         <td>{row.income}</td>
                         <td>{row.expenditure}</td>
@@ -54,9 +54,9 @@ export default function Betweendates(){
                         <td>{row.purposeofexpense}</td>
                         <td>{row.typeofexpense}</td>
                     </tr>
-                    </>
                 )
             )}
+         </tbody>
         </table>
         </>
     )
