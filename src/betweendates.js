@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import axios from "axios";
 
 
-export default function betweendates(){
+export default function Betweendates(){
     const [date, setDate] = useState("");
     const [date1, setDate1] = useState("");
     const [input, setInput] = useState({
@@ -46,7 +46,6 @@ export default function betweendates(){
         </thead>
             {input.user.map((row)=>{
                 return(
-                    <>
                     <tr>
                         <td>{row.income}</td>
                         <td>{row.expenditure}</td>
@@ -54,7 +53,6 @@ export default function betweendates(){
                         <td>{row.purposeofexpense}</td>
                         <td>{row.typeofexpense}</td>
                     </tr>
-                    </>
                 )
             })}
         </table>
