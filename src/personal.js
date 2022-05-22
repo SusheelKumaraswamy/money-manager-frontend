@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from "react";
 import axios from "axios";
-export default function personal(){
+export default function Personal(){
     const [input, setInput] = useState({
         user: []
       });
