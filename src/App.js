@@ -45,11 +45,6 @@ class FormikComponent extends React.Component {
       date:formData.date
     });
     console.log(response);
-    formData.income="",
-    formData.expenditure="",
-    formData.typeofexpense="personal",
-    formData.purposeofexpense="",
-    formData.date=""
   };
   render() {
     return (
